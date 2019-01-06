@@ -1,0 +1,86 @@
+@import '../style/theme/default.less';
+.pomelo-btn {
+  cursor: pointer;
+  position: relative;
+  color: rgba(0, 0, 0, 0.65);
+  padding: e('calc(.375em - 1px)') 0.75em;
+  margin: 0 @padding-xs @padding-xs 0;
+  border: @border-width-base solid transparent;
+  border-color: #d9d9d9;
+  border-radius: @border-radius-base;
+  background: #fff;
+  outline: none;
+  transition: all 0.4s;
+  display: inline-block;
+  &:hover {
+    border-color: #b5b5b5;
+    color: #363636;
+  }
+  &>i+span {
+    margin-left: @padding-xs;
+  } // size
+  &.pomelo-btn-sm {
+    font-size: @font-size-sm;
+  }
+  &.pomelo-btn-lg {
+    font-size: @font-size-lg;
+  } // disabled
+  &.pomelo-btn-disabled::before {
+    content: '';
+    position: absolute;
+    top: -1px;
+    bottom: -1px;
+    left: -1px;
+    right: -1px;
+    z-index: 1;
+    background: #fff;
+    opacity: 0.35;
+    border-radius: inherit;
+    cursor: not-allowed;
+  }
+  &.pomelo-btn-block {
+    display: block;
+    width: 100%;
+  }
+  &.pomelo-btn-primary {
+    color: #fff;
+    background: @button-background-color-primary;
+    border: none;
+  }
+  &.pomelo-btn-success {
+    color: #fff;
+    background: @button-background-color-success;
+    border: none;
+  }
+  &.pomelo-btn-warning {
+    background: @button-background-color-warning;
+    border: none;
+  }
+  &.pomelo-btn-danger {
+    color: #fff;
+    background: @button-background-color-danger;
+    border: none;
+  }
+  &.pomelo-btn-info {
+    color: #fff;
+    background: @button-background-color-info;
+    border: none;
+  }
+  &.pomelo-btn-link {
+    color: #fff;
+    background: @button-background-color-link;
+    border: none;
+  }
+  &.pomelo-btn-dashed {
+    border: @border-width-base dashed @border-color-base;
+    &:hover {
+      color: @primary-color;
+      border-color: @primary-color;
+    }
+  }
+  @keyframes loadingCircle {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}

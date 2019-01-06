@@ -1,0 +1,22 @@
+---
+name: Affix
+route: /components/Affix
+parent: Component
+order: 2
+sidebar: true
+---
+
+import { Playground } from 'docz';
+import Affix from './index.js';
+import Button from '../button';
+
+## 示例 1
+
+<Playground>
+  <div>
+    <Affix offsetTop={200}>
+      <Button type="primary">Button</Button>
+    </Affix>
+    <Button>Button</Button>
+  </div>
+</Playground>

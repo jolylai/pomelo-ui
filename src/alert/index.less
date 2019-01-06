@@ -1,0 +1,45 @@
+@import '../style/theme/default.less';
+@alert-prefix-cls: ~'@{prefix}-alert';
+.@{alert-prefix-cls} {
+  padding: 8px 16px;
+  margin-bottom: 16px;
+  border-radius: @border-radius-base;
+  position: relative;
+  &.@{alert-prefix-cls}-info {
+    color: #004085;
+    background: #cce5ff;
+    border: 1px solid #b8daff;
+  }
+  &.@{alert-prefix-cls}-success {
+    color: #155724;
+    background: #d4edda;
+    border: 1px solid #c3e6cb;
+  }
+  &.@{alert-prefix-cls}-warning {
+    color: #856404;
+    background: #fff3cd;
+    border: 1px solid #ffeeba;
+  }
+  &.@{alert-prefix-cls}-error {
+    color: #721c24;
+    background: #f8d7da;
+    border: 1px solid #f5c6cb;
+  }
+  &.@{alert-prefix-cls}-with-description {
+    padding-left: 64px;
+  }
+  & > .@{alert-prefix-cls}-icon {
+    position: absolute;
+    left: 8px;
+  }
+  & > .@{alert-prefix-cls}-description {
+    color: @text-color-secondary;
+  }
+  & > .@{alert-prefix-cls}-close-icon {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    z-index: 1;
+    cursor: pointer;
+  }
+}
