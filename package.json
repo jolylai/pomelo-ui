@@ -33,11 +33,13 @@
     "@babel/plugin-proposal-class-properties": "^7.2.3",
     "@babel/preset-env": "^7.2.3",
     "@babel/preset-react": "^7.0.0",
+    "@emotion/core": "^10.0.6",
     "@fortawesome/fontawesome-free": "^5.6.3",
     "@svgr/rollup": "^2.4.1",
     "babel-eslint": "^8.2.5",
     "cross-env": "^5.1.4",
     "docz": "^0.13.7",
+    "docz-plugin-css": "^0.11.0",
     "docz-theme-default": "^0.13.7",
     "eslint": "^5.0.1",
     "eslint-config-standard": "^11.0.0",
@@ -66,6 +68,7 @@
     "dist"
   ],
   "dependencies": {
-    "classnames": "^2.2.6"
+    "classnames": "^2.2.6",
+    "lodash": "^4.17.11"
   }
 }

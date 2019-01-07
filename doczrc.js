@@ -1,4 +1,4 @@
-import { css } from 'docz-plugin-css'
+import { css } from 'docz-plugin-css';
 
 export default {
   files: '**/*.{md,markdown,mdx}',
@@ -6,7 +6,7 @@ export default {
   plugins: [
     css({
       preprocessor: 'less',
-      cssmodules: false
-    })
-  ]
-}
+      cssmodules: false,
+    }),
+  ],
+};

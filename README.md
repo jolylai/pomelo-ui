@@ -2,7 +2,7 @@
 
 > A React UI Component for Web!!!
 
-[![NPM](https://img.shields.io/npm/v/pomelo-ui.svg)](https://www.npmjs.com/package/pomelo-ui) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/pomelo-ui.svg)](https://www.npmjs.com/package/pomelo-ui) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com) ![star](https://img.shields.io/github/stars/jolylai/pomelo-ui.svg)
 
 ## Install
 
@@ -25,6 +25,13 @@ class Example extends Component {
   }
 }
 ```
+
+## Feature
+- Avatar
+
+## Done
+- Button
+- Icon
 
 ## License
 
