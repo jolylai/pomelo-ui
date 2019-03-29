@@ -35,7 +35,7 @@ class index extends React.PureComponent {
     }
   };
 
-  componentDidUpdate = (prevProps, prevState) => {
+  componentDidUpdate = prevProps => {
     if (prevProps.children !== this.props.children) {
       this.updateTextScale();
     }
