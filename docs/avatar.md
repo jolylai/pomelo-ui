@@ -9,9 +9,9 @@ import Icon from "../src/icon";
 ## Size
 
 <Playground>
-  <Avatar size='small' icon='weixin' bordered />
-  <Avatar icon='weixin' bordered />
-  <Avatar size='large' icon='weixin' bordered />
+  <Avatar size='small' icon='weixin' />
+  <Avatar  />
+  <Avatar size='large' icon='weixin' />
 </Playground>
 
 ## Shape
@@ -25,7 +25,7 @@ import Icon from "../src/icon";
 ## Image
 
 <Playground>
-  <Avatar  src='https://img.yzcdn.cn/public_files/2018/02/01/5df3bb4b640ddc5efae915b7af90a243.png' />
+  <Avatar src='https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png' />
 </Playground>
 
 

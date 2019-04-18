@@ -1,0 +1,68 @@
+@import '../style/theme/default.less';
+@avatar-size-small: 24px;
+@avatar-size-default: 32px;
+@avatar-size-large: 40px;
+
+.pomelo-avatar {
+  display: inline-block;
+  box-sizing: border-box;
+  text-align: center;
+  overflow: hidden; // color: @theme-stroke-10;
+  position: relative;
+
+  &.pomelo-avatar-size-large {
+    width: @avatar-size-large;
+    height: @avatar-size-large;
+    line-height: @avatar-size-large;
+  }
+
+  &.pomelo-avatar-size-default {
+    width: @avatar-size-default;
+    height: @avatar-size-default;
+    line-height: @avatar-size-default;
+  }
+
+  &.pomelo-avatar-size-small {
+    width: @avatar-size-small;
+    height: @avatar-size-small;
+    line-height: @avatar-size-small;
+  }
+
+  &.pomelo-avatar-shape-circle {
+    border-radius: 50%;
+  }
+
+  &.pomelo-avatar-shape-square {
+    border-radius: 4px;
+  }
+
+  &.pomelo-avatar-bordered {
+    border: 1px solid @theme-stroke-5;
+  }
+
+  &.pomelo-avatar-type-image {
+    background: transparent;
+
+    >.pomelo-avatar-image {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &.pomelo-avatar-type-string {
+    background: @theme-stroke-6;
+
+    .pomelo-avatar-string {
+      font-weight: 500;
+    }
+
+    &.pomelo-avatar-size-small {
+      font-size: 14px;
+    }
+
+    &.pomelo-avatar-size-large {
+      font-size: 16px;
+    }
+  }
+}

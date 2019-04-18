@@ -1,22 +1,25 @@
 import React from 'react';
-import cx from 'classnames';
+import classnames from 'classnames';
 
-import './index.less';
+const getClassnames = props => {
+  const { type, spin, className } = props;
+  const cls = classnames('fa', {
+    'fa-spin': spin,
+    [className]: !!className,
+    [`fa-${type}`]: !!type,
+  });
+  return cls;
+};
 
 const Icon = props => {
-  const { type, className, spin, ...otherProps } = props;
-  const cls = cx(className, {
-    fab: type,
-    [`fa-${type}`]: type,
-    'fa-spin': spin,
-  });
+  const { color, size } = props;
 
-  return <i className={cls} {...otherProps} />;
+  const cls = getClassnames(props);
+  return <i class={cls} style={{ fontSize: size, color }} />;
 };
 
 Icon.defaultProps = {
-  className: '',
-  spin: false,
+  size: 26,
 };
 
 export default React.memo(Icon);
